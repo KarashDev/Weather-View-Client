@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherViewClientBL\WeatherViewClientBL.csproj" />
+    <ProjectReference Include="..\WeatherViewClientDB\WeatherViewClientDB.csproj" />
+  </ItemGroup>
+
 </Project>

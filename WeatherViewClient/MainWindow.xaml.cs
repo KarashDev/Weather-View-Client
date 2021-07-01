@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WeatherViewClientDB;
 
 namespace WeatherViewClient
 {
@@ -23,6 +24,20 @@ namespace WeatherViewClient
         public MainWindow()
         {
             InitializeComponent();
+            DataBaseCreator.CreateDataBase();
+
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var dbCitiesNames = db.Cities.ToList();
+                CBoxChooseCity.ItemsSource = dbCitiesNames;
+                CBoxChooseCity.DisplayMemberPath = "Name";
+                CBoxChooseCity.SelectedValuePath = "Id";
+            }
+        }
+
+        private void BtnShowWeather_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
