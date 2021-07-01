@@ -28,10 +28,11 @@ namespace WeatherViewClient
 
             using (ApplicationContext db = new ApplicationContext())
             {
-                var dbCitiesNames = db.Cities.ToList();
+                var dbCitiesNames = db.Cities.OrderBy(c => c.Name).ToList();
                 CBoxChooseCity.ItemsSource = dbCitiesNames;
                 CBoxChooseCity.DisplayMemberPath = "Name";
                 CBoxChooseCity.SelectedValuePath = "Id";
+                CBoxChooseCity.SelectedIndex = 0;
             }
         }
 

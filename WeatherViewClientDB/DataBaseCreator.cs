@@ -25,7 +25,8 @@ namespace WeatherViewClientDB
                 {
                     db.Cities.Add(new Entities.City {Name = cityName});
                 }
-
+               
+                db.SaveChanges();
 
             }
         }
