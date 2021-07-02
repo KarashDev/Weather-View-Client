@@ -14,8 +14,14 @@ namespace WeatherViewClientDB
             
             [Column("Наименование")]
             public string Name { get; set; }
+
+            [Column("Широта")]
+            public double Latitude { get; set; }
+            
+            [Column("Долгота")]
+            public double Longitude { get; set; }
         }
-       
+
         [Table("История запросов")]
         public class RequestHistoryStorage
         {
