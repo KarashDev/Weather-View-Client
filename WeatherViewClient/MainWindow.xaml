@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="Показ погоды" Height="450" Width="800" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
     <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Margin="0,0,0,-6">
-        <Label Content="Выберите город" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="17"/>
-        <ComboBox x:Name="CBoxChooseCity" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="BtnShowWeather" Content="Показать погоду" HorizontalAlignment="Left" Margin="332,142,0,0" VerticalAlignment="Top" Height="30" Width="128" Click="BtnShowWeather_Click"/>
-        <DataGrid x:Name="DataGridActWeather" Margin="173,185,126,96" FontSize="20" AutoGenerateColumns="False"  />
-        <Button x:Name="BtnOpenHistory" Content="История запросов" HorizontalAlignment="Left" Margin="340,344,0,0" VerticalAlignment="Top" Height="30" Width="128" Click="BtnOpenHistory_Click"/>
+        <Label Content="Выберите город" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox x:Name="CBoxChooseCity" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Width="120" FontSize="15"/>
+        <Button x:Name="BtnShowWeather" Content="Показать погоду" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Height="30" Width="128" Click="BtnShowWeather_Click" FontSize="15" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+        <Button x:Name="BtnOpenHistory" Content="История запросов" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Height="30" Width="148" Click="BtnOpenHistory_Click" FontSize="15" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+        <TextBlock x:Name="TextBlockActWeather" HorizontalAlignment="Center" Margin="0,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="230" FontSize="15" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockFeelWeather" HorizontalAlignment="Center" Margin="0,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="230" FontSize="15" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlockWindSpeed" HorizontalAlignment="Center" Margin="0,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="230" FontSize="15" TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"/>
 
     </Grid>
 </Window>

@@ -23,21 +23,18 @@ namespace WeatherViewClientDB
         }
 
         [Table("История запросов")]
-        public class RequestHistoryStorage
+        public class RequestHistoryData
         {
             public int Id { get; set; }
            
-            [Column("Дата")]
-            public string Date { get; set; }
+            [Column("Дата_время")]
+            public DateTime DateTime { get; set; }
             
-            [Column("Время")]
-            public string Time { get; set; }
-           
             [Column("Город")]
             public string City { get; set; }
            
             [Column("Погода")]
-            public string Weather { get; set; }
+            public string ActualWeather { get; set; }
         }
     }
 }

@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WeatherViewClientBL\WeatherViewClientBL.csproj" />
+    <PackageReference Include="GSF.Core" Version="2.3.302" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WeatherViewClientDB\WeatherViewClientDB.csproj" />
   </ItemGroup>
 

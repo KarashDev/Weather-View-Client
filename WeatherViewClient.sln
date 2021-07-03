@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherViewClient", "WeatherViewClient\WeatherViewClient.csproj", "{B4E7209C-6FF6-43DD-8601-EA794D50BFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherViewClient", "WeatherViewClient\WeatherViewClient.csproj", "{B4E7209C-6FF6-43DD-8601-EA794D50BFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherViewClientBL", "WeatherViewClientBL\WeatherViewClientBL.csproj", "{E85D36E5-5E89-42A8-AE3E-3A95ABF0E7A6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherViewClientDB", "WeatherViewClientDB\WeatherViewClientDB.csproj", "{3D52B8D3-D722-47CA-81C5-2342D5EB50C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherViewClientDB", "WeatherViewClientDB\WeatherViewClientDB.csproj", "{3D52B8D3-D722-47CA-81C5-2342D5EB50C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{B4E7209C-6FF6-43DD-8601-EA794D50BFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4E7209C-6FF6-43DD-8601-EA794D50BFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4E7209C-6FF6-43DD-8601-EA794D50BFD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E85D36E5-5E89-42A8-AE3E-3A95ABF0E7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E85D36E5-5E89-42A8-AE3E-3A95ABF0E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E85D36E5-5E89-42A8-AE3E-3A95ABF0E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E85D36E5-5E89-42A8-AE3E-3A95ABF0E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D52B8D3-D722-47CA-81C5-2342D5EB50C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D52B8D3-D722-47CA-81C5-2342D5EB50C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D52B8D3-D722-47CA-81C5-2342D5EB50C2}.Release|Any CPU.ActiveCfg = Release|Any CPU

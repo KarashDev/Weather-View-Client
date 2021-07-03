@@ -7,7 +7,7 @@ namespace WeatherViewClientDB
     public class ApplicationContext : DbContext
     {
         public DbSet<City> Cities { get; set; }
-        public DbSet<RequestHistoryStorage> Request_History { get; set; }
+        public DbSet<RequestHistoryData> RequestHistoryDatas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
